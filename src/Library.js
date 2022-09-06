@@ -3,7 +3,6 @@ import {useState} from 'react'
 import LibItems from './components/LibItems'
 
 function Library() {
-    const [isShown, setIsShown] = useState(true);
     const [libItem, setLibItem] = useState([
         {
             id:1,
@@ -23,18 +22,15 @@ function Library() {
     ]) 
 
     const closeItem = (id)=>{
-        //setLibItem(libItem.filter((item=>item.text !==id)))
-        //item=>item.id //we have the id of the one we want gone. with id we select the item and remove 'text'
-        setLibItem(libItem.map((item)=>item.id===id ? 
-      {...item,vis: !item.vis} : item
-    )
-  )
+            setLibItem(libItem.map((item)=>item.id===id ? 
+          {...item,vis: !item.vis} : item
+        )
+      )
     }
     
   return (
-    <div>
-         {/* {libItem.map(lib => <h1>{lib.title}</h1>)} WILL PRINT*/}
-        <LibItems libItem={libItem} closeItem={closeItem} isShown={isShown}/>
+    <div className='container'>
+        <LibItems libItem={libItem} closeItem={closeItem}/>
     </div>
   )
 }
