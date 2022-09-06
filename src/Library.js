@@ -11,7 +11,7 @@ function Library() {
         },
         {
             id:2,
-            title:'The Conscriptor',
+            title:'The Recruiter',
             text:'So you want to join the army...'
         },
         {
