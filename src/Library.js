@@ -22,7 +22,7 @@ function Library() {
     ]) 
 
     const closeItem = (id)=>{
-            setLibItem(libItem.map((item)=>item.id===id ? 
+            setLibItem(libItem.map((item)=>item.id===id ? //remove item.id===id and replace with true
           {...item,vis: !item.vis} : item
         )
       )

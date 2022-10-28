@@ -4,16 +4,20 @@ import reportWebVitals from './reportWebVitals';
 // import App from './App';
 // import Counter from './Counter'
 // import Filter from './Filter'
-import Library from './Library'
+// import Trial from './Trial.js'
+//import Library from './Library'
+import Slider from './Slider'
+import Mainer from './Mainer'
 import './index.css';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App />
     <Counter />
     <Filter /> */}
-    <Library />
+    <Slider />
+    {/* <Trial /> */}
+    {/* <Mainer /> */}
   </React.StrictMode>
 );
 
